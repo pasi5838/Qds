@@ -1,0 +1,30 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+#game-container {
+  background: white;
+  padding: 20px;
+  margin: auto;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-top: 10px;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}

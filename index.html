@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tebak Nama Hewan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>Tebak Nama Hewan</h1>
+  <div id="game-container">
+    <p id="question">Memuat soal...</p>
+    <input type="text" id="answer" placeholder="Ketik jawabanmu di sini"/>
+    <button onclick="checkAnswer()">Cek Jawaban</button>
+    <p id="feedback"></p>
+    <p>Skor: <span id="score">0</span></p>
+    <p>Sisa Nyawa: <span id="lives">3</span></p>
+    <button onclick="restartGame()">Restart</button>
+  </div>
+  <canvas id="confetti-canvas"></canvas>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</body>
+</html>
